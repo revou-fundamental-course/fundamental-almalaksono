@@ -10,31 +10,35 @@
 
 <body>
     <!--Ini Header Nav-->
+    
     <header class="nav-container">
         <div class="logo-icon"></div>
 
         <nav>
             <a href="#home">Home</a>
             <a href="#our-profile">Our Profile</a>
-            <a>Portofoilo</a>
-            <a>Message Us</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message-us">Message Us</a>
         </nav>
     </header>
-    
-    <hr/>
 
     <main>
         <!--Ini Home Content-->
-        <section id="home">
-            <header>
-                <h1>Hi User, Welcome to Our Website</h1>
-            </header>
-
-            <article>
-                <p>This is Soto Ayam Lamongan Seturan</p>
-
-                <div class="banner-container"></div>
-            </article>
+        <section id="home" class="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="hero-content">
+                    <h1>Soto Ayam Lamongan Seturan</h1>
+                    <p>Tempat makan favorit Anda di Seturan, Sleman, Yogyakarta</p>
+                    <button class="btn btn-primary" onclick="window.open('https://gofood.co.id/id/yogyakarta/restaurant/soto-ayam-lamongan-seturan-caturtunggal-depok-sleman-1b911cb8-0087-4be3-98ce-6daf69240fdd', '_blank')">Explore Menu</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-background">
+              <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/07/17043644/Praktis-dan-Simpel-Ini-Resep-Soto-Ayam-Lamongan-yang-Menggugah-Selera-.jpg.webp" alt="Hero Image">
+            </div>
         </section>
 
         <hr/>
@@ -42,34 +46,116 @@
         <!--Ini Our Profile Content-->
         <section id="our-profile">
             <header>
-                <h1>Our Profile</h1>
+              <h1>Our Profile</h1>
             </header>
-
             <article class="profile-content">
+              <div class="profile-grid">
                 <div class="profile-item">
-                    <div class="profile-icon profile-1"></div>
-                    <p>Profil 1</p>
+                  <div class="profile-icon profile-1">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <h2>Our Story</h2>
+                  <p>Berdiri sejak tahun 2017, restoran kami berkomitmen untuk terus berinovasi dan menghadirkan cita rasa terbaik bagi para pelanggan. Dengan bahan-bahan berkualitas tinggi, kami selalu berusaha untuk memberikan yang terbaik.</p>
                 </div>
-
                 <div class="profile-item">
-                    <div class="profile-icon profile-2"></div>
-                    <p>Profil 2</p>
+                  <div class="profile-icon profile-2">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h2>Our Store</h2>
+                  <p>Warung kami tersedia baik online (GoFood, GrabFood, ShopeeFood) maupun offline. Kami akan selalu mengutamakan kenyamanan bagi para pelanggan dan tetap menjaga kualitas makanan kami dimana pun Anda berada.</p>
                 </div>
-
                 <div class="profile-item">
-                    <div class="profile-icon profile-3"></div>
-                    <p>Profil 3</p>
+                  <div class="profile-icon profile-3">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <h2>Our Values</h2>
+                  <p>Soto ayam dengan sayur segar dan bumbu pilihan. Memiliki tempat yang bersih dan strategis dilengkapi dengan fasilitas dan service yang dapat memuaskan para pelanggan.</p>
                 </div>
-
-                <div class="divider"></div>
+              </div>
             </article>
+          </section>
 
-        <!--Ini Portofolio Content-->
+          <hr/>
+
+        <!--Ini Portfolio Content-->
+        <section id="portfolio">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                  <img src="assets/warung soto.jpg" alt="Image 1">
+                  <h2>Warung Soto</h2>
+                  <p>Warung minimalis yang dibuat senyaman mungkin agar pelanggan menikmati setiap moment makan soto secara langsung. Tersedia pula bermacam-macam buku yang bisa dibaca di tempat sehingga pelanggan dapat bersantai.</p>
+                </div>
+                <div class="portfolio-item">
+                  <img src="assets/warung soto 2.jpg" alt="Image 2">
+                  <h2>Parkiran Warung</h2>
+                  <p>Tersedia parkiran motor/sepeda gratis di depan warung soto lamongan.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/pict soto.jpg" alt="Image 3">
+                    <h2>Soto Lamongan</h2>
+                    <p>Soto Lamongan merupakan menu favorit utama kami.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/menu soto.jpg" alt="Image 4">
+                    <h2>Menu Paket Favorit</h2>
+                    <p>Menu paket favorit kami baik online maupun offline.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/rice box.jpg" alt="Image 5">
+                    <h2>Rice Box</h2>
+                    <p>Menyediakan paket rice box dengan berbagai menu menarik yang bisa dipesan untuk catering atau acara-acara tertentu.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/berkah jumat.jpg" alt="Image 6">
+                    <h2>Berkah Jumat</h2>
+                    <p>Kami membuka pesanan 'Berkah Jumat' berupa Ayam Geprek yang akan didistribusikan ke masjid-masjid sekitar dan panti asuhan.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
 
         <!--Ini Message Us Content-->
+        <section id="message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            <div class="container">
+                <div class="form-container">
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <h2>Send Us a Message</h2>
 
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama" required>
+    
+                            <label for="tanggalLahir">Tanggal Lahir:</label>
+                            <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+    
+                            <label>Jenis Kelamin:</label>
+                            <div class="radio-group">
+                            <label><input type="radio" name="jenisKelamin" value="Laki-Laki" required> Laki-Laki</label>
+                            <label><input type="radio" name="jenisKelamin" value="Perempuan" required> Perempuan</label>
+                            </div>
+    
+                            <label for="pesan">Pesan:</label>
+                            <textarea id="pesan" name="pesan" required></textarea>
+    
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="result-container">
+                    <div id="currentTime"></div>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
     </main>
-
 </body>
 
 </html>
