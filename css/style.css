@@ -14,7 +14,6 @@ main {
     padding: 32px;
 }
 
-/* Add some basic styling to the navigation bar */
 .nav-container {
     background-color: #a5a1a1;
     padding: 1rem;
@@ -50,7 +49,6 @@ nav a {
     margin: 0 0.5rem;
   }
   
-  /* Make the navigation links look like buttons */
 nav a {
     background-color: #716f6d;
     border: none;
@@ -62,26 +60,9 @@ nav a:hover {
     background-color: #555;
   }
   
-  /* Add some spacing between the navigation links */
 nav a + a {
     margin-left: 1rem;
   }
-
-/*.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-icon {
-    height: 50px;
-    width: 50px;
-
-    /* For Image Icon 
-    background-image: url(../assets/soto\ anime.jpg);
-    background-size: cover;
-    border-radius: 50%;
-} */
 
 .hero {
     position: relative;
@@ -121,15 +102,6 @@ nav a + a {
   .hero-content button:hover {
     background-color: #d2dad2;
   }
-  
-  /*.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }*/
   
   .hero-background img {
     width: 100%;
