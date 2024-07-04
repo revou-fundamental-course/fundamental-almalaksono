@@ -1,6 +1,7 @@
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -11,7 +12,7 @@ body {
 }
 
 main {
-    padding: 32px;
+    padding: 2rem;
 }
 
 .nav-container {
@@ -20,49 +21,62 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* to keep the logo in place */
-  }
+    position: relative; 
+}
 
 .logo-icon {
     height: 50px;
     width: 50px;
-
     /* For Image Icon */
     background-image: url(https://www.pikpng.com/pngl/m/338-3381767_mangkok-ayam-jago-png-logo-mangkok-bakso-clipart.png);
     background-size: cover;
     border-radius: 50%;
 }
-  
-  /* Style the navigation links */
+
 nav a {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease;
-  }
-  
-nav a:hover {
-    color: #ccc;
-  }
-  
-nav a {
     padding: 0.5rem 2rem;
     margin: 0 0.5rem;
-  }
-  
-nav a {
     background-color: #716f6d;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
-  }
+}
   
 nav a:hover {
+    color: #ccc;
     background-color: #555;
-  }
+}
   
 nav a + a {
     margin-left: 1rem;
-  }
+}
+
+/*mobile styles*/
+
+@media (max-width: 480px) {
+    .nav-container {
+      padding: 0.5rem;
+    }
+    nav a {
+      font-size: 1.2rem;
+    }
+}
+
+/*desktop styles*/
+
+@media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+    width: 100%;
+    margin-bottom: 1rem;
+    }
+}
 
 .hero {
     position: relative;
@@ -72,45 +86,45 @@ nav a + a {
     justify-content: center;
     background-color: #f7f7f7;
     padding: 20px;
-  }
+}
   
-  .hero-content {
+.hero-content {
     text-align: center;
     color: #333;
-  }
+}
   
-  .hero-content h1 {
+.hero-content h1 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
+}
   
-  .hero-content p {
+.hero-content p {
     font-size: 18px;
     margin-bottom: 40px;
-  }
+}
   
-  .hero-content button {
+.hero-content button {
     background-color: #282f29;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  .hero-content button:hover {
+.hero-content button:hover {
     background-color: #d2dad2;
-  }
+}
   
-  .hero-background img {
+.hero-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.7);
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hero {
       height: 50vh;
     }
@@ -120,7 +134,7 @@ nav a + a {
     .hero-background img {
       filter: brightness(0.7);
     }
-  }
+}
 
 nav>a {
     padding-left: 32px;
@@ -178,74 +192,74 @@ nav>a {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-  }
+}
   
-  .profile-grid {
+.profile-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-  }
+}
   
-  .profile-item {
+.profile-item {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-  }
+}
   
-  .profile-icon {
+.profile-icon {
     font-size: 36px;
     color: #666;
     margin-bottom: 10px;
-  }
+}
   
-  .profile-icon i {
+.profile-icon i {
     font-size: 48px;
     margin-right: 10px;
-  }
+}
   
-  .profile-item h2 {
+.profile-item h2 {
     font-size: 18px;
     margin-top: 0;
-  }
+}
   
-  .profile-item p {
+.profile-item p {
     font-size: 14px;
     color: #666;
-  }
+}
 
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
   
-  .portfolio-item {
+.portfolio-item {
     margin: 20px;
     width: 300px;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-  }
+}
   
-  .portfolio-item img {
+.portfolio-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-  }
+}
   
-  .portfolio-item h2 {
+.portfolio-item h2 {
     font-size: 18px;
     margin-top: 10px;
-  }
+}
   
-  .portfolio-item p {
+.portfolio-item p {
     font-size: 14px;
     color: #666;
-  }
+}
 
 .container {
     display: flex;
@@ -296,15 +310,15 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+}
   
-  .radio-group label {
+.radio-group label {
     margin-right: 20px;
-  }
+}
   
-  .radio-group input[type="radio"] {
+.radio-group input[type="radio"] {
     margin-right: 10px;
-  }
+}
 
 button {
     display: block;
